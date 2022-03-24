@@ -1,0 +1,142 @@
+<!--
+    Name: Victoria Tomaszewicz
+    Student ID: 8774369
+    Email: vtomaszewicz4369@conestogac.on.ca
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROG1800 - Assignment 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Mali:wght@300&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>The Best Flower Online Store</h1>
+    </header>
+    <main>
+        <h2>Our Best Sellers</h2>
+        <section class="row">
+            <div class="images">
+                <figure class="photo">
+                    <img src="images/Flowers1.jpg" alt="">
+                    <figcaption>
+                        <h3>Winter Wonderland - $40</h3>
+                    </figcaption>
+                    <figcaption>Cool toned and white roses.</figcaption>
+                </figure>
+            </div>
+            <div class="images">
+                <figure class="photo">
+                    <img src="images/Flowers2.jpg" alt="">
+                    <figcaption>
+                        <h3>Firey Paradise - $35</h3>
+                    </figcaption>
+                    <figcaption>Red Roses with an assortment of orange/pink flowers and white Tuberoses. </figcaption>
+                </figure>
+            </div>
+            <div class="images">
+                <figure class="photo">
+                    <img src="images/Flowers3.jpg" alt="">
+                    <figcaption>
+                        <h3>Summer Fields - $30</h3>
+                    </figcaption>
+                    <figcaption>Large Sunflowers with complimenting purple flowers.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <h2>Check-out Order Form</h2>
+        <form name="myForm" action="" method="post" onsubmit="return FormSubmit();" class="gridForm">
+            <div class="formFormat">
+                <label for="firstname">First Name*:</label>
+                <input id="firstname" type="text" class="textBoxSize" placeholder="First" name="firstname">
+            </div>
+            <div class="formFormat">
+                <label for="lastname">Last Name*:</label>
+                <input id="lastname" type="text" class="textBoxSize" placeholder="Last" name="lastname">
+            </div>
+            <div class="formFormat">
+                <label for="email">Email Address*:</label>
+                <input id="email" type="text" class="textBoxSize" placeholder="example@domain.com" name="email">
+            </div>
+            <div class="formFormat">
+                <label for="phone">Phone Number*:</label>
+                <input id="phone" type="text" class="textBoxSize" placeholder="XXX-XXX-XXXX" name="phone">
+            </div>
+            <div class="formFormat">
+                <label for="address">Home Address*:</label>
+                <input id="address" type="text" class="textBoxSize" name="address">
+            </div>
+            <div class="formFormat">
+                <label for="province">Province*:</label>
+                <select name="province" id="province" class="textBoxSize">
+                    <option value="0">---------- Select ----------</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                    <option value="MB">MB</option>
+                    <option value="NB">NB</option>
+                    <option value="NL">NL</option>
+                    <option value="NS">NS</option>
+                    <option value="NT">NT</option>
+                    <option value="NU">NU</option>
+                    <option value="ON">ON</option>
+                    <option value="PE">PE</option>
+                    <option value="QU">QU</option>
+                    <option value="SK">SK</option>
+                    <option value="YT">YT</option>
+                </select>
+            </div>
+            <div class="formFormat">
+                <label for="city">City*:</label>
+                <input id="city" type="text" class="textBoxSize" name="city">
+            </div>
+            <div class="formFormat">
+                <label for="postalcode">Postal Code*:</label>
+                <input id="postalcode" type="text" class="textBoxSize" placeholder="A1B 2C3" name="postalcode">
+            </div>
+            <div class="formFormat">
+                <label class="message" for="selectedProduct">Purchase of at least one product is required.<br /></label>
+                <br />
+                <br />
+                <label for="product1">Winter Wonderland:</label>
+                <input id="product1" type="text" class="textBoxSize" name="product1">
+            </div>
+            <div class="formFormat">
+                <label for="product2">Firey Paradise:</label>
+                <input id="product2" type="text" class="textBoxSize" name="product2">
+            </div>
+            <div class="formFormat">
+                <label for="product3">Summer Fields:</label>
+                <input id="product3" type="text" class="textBoxSize" name="product3">
+            </div>
+            <div class="formFormat">
+                <label for="delivery">Delivery Time*:</label>
+                <select name="delivery" id="delivery" class="textBoxSize">
+                    <option value="0">---------- Select ----------</option>
+                    <option value="1">1 Day</option>
+                    <option value="2">2 Days</option>
+                    <option value="3">3 Days</option>
+                    <option value="4">4 Days</option>
+                </select>
+            </div>
+            <input type="Submit" value="Submit">
+            <p id="errorMessage" class="errorMessage"></p>
+            <label for="requiredFields">* = Required Fields</label>
+        </form>
+        <h2>Invoice</h2>
+        <h2><span id="result"></span></h2>
+    </main>
+    <footer>
+        &copy; 2022 PROG1800 Assignment 2 by Victoria Tomaszewicz
+    </footer>
+</body>
+
+</html>
